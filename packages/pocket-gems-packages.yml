@@ -1,0 +1,74 @@
+generated: '2026-08-05'
+method: searched
+source: https://registry.npmjs.org/ (@pocketgems scope) + https://github.com/pocketgems
+note: >-
+  These are first-party open-source Node.js libraries published by Pocket Gems (the
+  internal "Todea" service stack), NOT client SDKs for a Pocket Gems API. Pocket Gems
+  publishes no public API, so no `SDKs` pointer is emitted for this artifact — an SDK
+  pointer would assert an API-consumption surface that does not exist. Registries with
+  no first-party Pocket Gems packages found: PyPI, Maven Central, NuGet, pkg.go.dev,
+  RubyGems, Packagist, crates.io.
+packages:
+- language: javascript
+  registry: npm
+  name: '@pocketgems/dynamodb'
+  version: 0.4.4
+  license: Apache-2.0
+  description: Todea DynamoDB Library — a transactional, schemaful SDK for AWS DynamoDB with query and index support.
+  url: https://www.npmjs.com/package/@pocketgems/dynamodb
+  registry_url: https://registry.npmjs.org/@pocketgems%2fdynamodb
+  source: https://github.com/pocketgems/dynamodb
+  install: npm install @pocketgems/dynamodb
+  official: true
+  kind: infrastructure-library
+  last_published: '2026-06-23'
+- language: javascript
+  registry: npm
+  name: '@pocketgems/app'
+  version: 0.0.15
+  license: Apache-2.0
+  description: Todea App Library — service framework used to build Pocket Gems HTTP services.
+  url: https://www.npmjs.com/package/@pocketgems/app
+  registry_url: https://registry.npmjs.org/@pocketgems%2fapp
+  source: https://github.com/pocketgems/app
+  install: npm install @pocketgems/app
+  official: true
+  kind: infrastructure-library
+  last_published: '2026-03-09'
+- language: javascript
+  registry: npm
+  name: '@pocketgems/schema'
+  version: 0.1.3
+  license: Apache-2.0
+  description: Todea Schema library — fluent construction of JSON Schema and AWS C2J shape schema without hand-writing large JSON objects.
+  url: https://www.npmjs.com/package/@pocketgems/schema
+  registry_url: https://registry.npmjs.org/@pocketgems%2fschema
+  source: https://github.com/pocketgems/schema
+  install: npm install @pocketgems/schema
+  official: true
+  kind: infrastructure-library
+  last_published: '2026-03-09'
+- language: javascript
+  registry: npm
+  name: '@pocketgems/unit-test'
+  version: 0.2.0
+  license: Apache-2.0
+  description: Thin wrapper around Jest and Supertest providing better test organization.
+  url: https://www.npmjs.com/package/@pocketgems/unit-test
+  registry_url: https://registry.npmjs.org/@pocketgems%2funit-test
+  source: https://github.com/pocketgems/unit-test
+  install: npm install @pocketgems/unit-test
+  official: true
+  kind: infrastructure-library
+  last_published: '2026-03-09'
+x-evidence:
+  fetched: '2026-08-05'
+  npm_search:
+    url: https://registry.npmjs.org/-/v1/search?text=%40pocketgems
+    http_status: 200
+    total: 4
+  github_org:
+    url: https://api.github.com/orgs/pocketgems/repos
+    http_status: 200
+    public_repos: 65
+    non_forks: 15

@@ -1,8 +1,17 @@
 aid: pocket-gems
 name: Pocket Gems
-description: 'Pocket Gems is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Pocket Gems is a San Francisco mobile games and interactive entertainment
+  studio founded in 2009, employing over 200 people and backed by Sequoia Capital and
+  Tencent. It builds and operates the Episode interactive-storytelling network, Episode
+  XOXO, and the 3D real-time strategy title War Dragons on its proprietary mobile-first
+  Mantis Engine, with products downloaded more than 325 million times. Pocket Gems ships
+  consumer mobile applications rather than a developer-facing API program: there is no
+  public developer portal, API reference, or machine-readable specification. Its public
+  developer surface is a GitHub organization and four first-party Apache-2.0 Node.js
+  libraries published to npm under the @pocketgems scope (the internal "Todea" service
+  stack), plus an Episode Writer''s Portal used by story authors.'
 url: https://raw.githubusercontent.com/api-evangelist/pocket-gems/refs/heads/main/apis.yml
+image: https://www.pocketgems.com/wp-content/themes/pocketgems/assets/images/pocket-gems-logo@2x.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Gaming
+- Mobile Games
+- Interactive Fiction
+- Entertainment
+- Mobile Applications
+- Game Development
+- Consumer Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,53 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pocket-gems-domain-security.yml
 - type: Website
+  url: https://www.pocketgems.com/
+- type: About
+  url: https://www.pocketgems.com/about/
+- type: GitHubOrganization
+  url: https://github.com/pocketgems
+- type: Support
+  url: https://pocketgems-support.helpshift.com/hc/en/
+- type: Community
+  url: https://discord.com/invite/VAzufMmXgA
+- type: TermsOfService
+  url: https://www.pocketgems.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.pocketgems.com/privacy-policy/
+- type: Careers
+  url: https://www.pocketgems.com/jobs/
+- type: SecondaryMarket
   url: https://forgeglobal.com/pocket-gems_stock/
+- type: Packages
+  url: packages/pocket-gems-packages.yml
+- type: LLMsTxt
+  url: llms/pocket-gems-llms.txt
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Pocket Gems is an active mobile game studio (Episode, Episode XOXO, War Dragons)
+    that ships consumer apps only — no api./developer./docs. host exists except docs.pocketgems.com,
+    which 302s to an Okta/Google Workspace SSO login for internal Google Drive rather than
+    to developer documentation.
+  evidence:
+  - url: https://api.pocketgems.com/
+    status: 0
+  - url: http://docs.pocketgems.com/
+    status: 302
+  - url: https://www.pocketgems.com/openapi.json
+    status: 404
+  - url: https://www.pocketgems.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.episodeinteractive.com/.well-known/agent-card.json
+    status: 404
+  - url: https://registry.npmjs.org/-/v1/search?text=%40pocketgems
+    status: 200
+  checked: '2026-08-05'

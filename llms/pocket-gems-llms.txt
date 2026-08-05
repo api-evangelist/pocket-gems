@@ -1,0 +1,71 @@
+# Pocket Gems
+
+> Pocket Gems is a San Francisco mobile games and interactive entertainment studio
+> founded in 2009, backed by Sequoia Capital and Tencent, with over 200 employees and
+> more than 325 million product downloads. It builds Episode, Episode XOXO, and War
+> Dragons on its proprietary mobile-first Mantis Engine.
+
+<!--
+generated: 2026-08-05
+method: generated
+source: apis.yml + repo artifacts (no /llms.txt is published by Pocket Gems; probed
+        https://www.pocketgems.com/llms.txt, https://www.episodeinteractive.com/llms.txt,
+        https://home.episodeinteractive.com/llms.txt and https://www.wardragons.com/llms.txt
+        on 2026-08-05 — all 404)
+-->
+
+## Important: there is no Pocket Gems API
+
+Pocket Gems publishes **no public API, no developer portal, no API reference, and no
+machine-readable specification** (OpenAPI, AsyncAPI, GraphQL SDL, MCP manifest, or A2A
+agent card). Contract discovery on 2026-08-05 probed every public host — `pocketgems.com`,
+`episodeinteractive.com`, `home.episodeinteractive.com`, `wardragons.com` — for
+`/openapi.json`, `/api-docs`, `/.well-known/*` discovery documents, and both A2A agent-card
+paths, and DNS-resolved `api.`, `developer.`, `developers.`, `docs.`, `dev.`, `partner.`,
+`graphql.`, `portal.` and `status.` subdomains. Only `docs.pocketgems.com` resolves, and it
+redirects to an Okta/Google Workspace SSO login for internal Google Drive — it is not
+developer documentation.
+
+Do not infer, guess, or synthesize a Pocket Gems API endpoint. There is not one to call.
+
+## Products
+
+- [Episode](https://www.episodeinteractive.com/): interactive mobile storytelling network
+  and platform; stories are authored in the Episode scripting language through the Episode
+  Writer's Portal, not through an HTTP API.
+- [Episode XOXO](https://www.pocketgems.com/episode-xoxo/): companion interactive story app.
+- [War Dragons](https://www.wardragons.com/): 3D real-time strategy mobile game.
+- Mantis Engine: proprietary mobile-first game technology platform (internal; not licensed
+  or documented publicly).
+
+## Open source (the actual public developer surface)
+
+Pocket Gems maintains a GitHub organization and publishes four first-party Apache-2.0
+Node.js libraries — the internal "Todea" service stack. These are infrastructure libraries,
+**not client SDKs for a Pocket Gems API**.
+
+- [github.com/pocketgems](https://github.com/pocketgems): 65 public repositories, 15 of them
+  first-party (the rest are forks of upstream open source).
+- [@pocketgems/dynamodb](https://www.npmjs.com/package/@pocketgems/dynamodb): transactional,
+  schemaful SDK for AWS DynamoDB with query and index support.
+- [@pocketgems/app](https://www.npmjs.com/package/@pocketgems/app): Todea App Library, the
+  service framework behind Pocket Gems HTTP services.
+- [@pocketgems/schema](https://www.npmjs.com/package/@pocketgems/schema): fluent JSON Schema
+  and AWS C2J shape-schema construction.
+- [@pocketgems/unit-test](https://www.npmjs.com/package/@pocketgems/unit-test): Jest +
+  Supertest wrapper.
+
+## Company
+
+- [Website](https://www.pocketgems.com/)
+- [About](https://www.pocketgems.com/about/)
+- [Careers](https://www.pocketgems.com/jobs/)
+- [Support (Helpshift)](https://pocketgems-support.helpshift.com/hc/en/)
+- [Terms of Service](https://www.pocketgems.com/terms-of-service/)
+- [Privacy Policy](https://www.pocketgems.com/privacy-policy/)
+
+## Optional
+
+- [Episode Discord](https://discord.com/invite/VAzufMmXgA)
+- [War Dragons Discord](https://discord.gg/5stFv5wza5)
+- [Forge Global secondary-market listing](https://forgeglobal.com/pocket-gems_stock/)

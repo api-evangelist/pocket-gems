@@ -1,0 +1,100 @@
+generated: '2026-08-05'
+method: probed
+source: live HTTPS probes of every Pocket Gems public host
+found: 0
+summary: >-
+  No RFC 8615 well-known discovery document is published on any Pocket Gems host.
+  All four public hosts answer 404 for security.txt, OIDC/OAuth discovery, api-catalog,
+  ai-plugin.json, and both A2A agent-card paths. No WellKnown / SecurityTxt / AgentCard
+  pointer is wired into apis.yml because nothing was found — this file records the probe
+  so a later run does not have to repeat it blind.
+hosts:
+- host: https://www.pocketgems.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  note: >-
+    First sweep returned 404 (WordPress catch-all HTML, 19806 bytes) for every path.
+    A repeat sweep minutes later returned 403 for the same paths — the site WAF
+    rate-limits repeated /.well-known/ requests. The 404s above are the clean read.
+- host: https://www.episodeinteractive.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://home.episodeinteractive.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://www.wardragons.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+x-evidence:
+  fetched: '2026-08-05'
+  hosts_probed: 4
+  paths_per_host: 9
+  documents_found: 0
