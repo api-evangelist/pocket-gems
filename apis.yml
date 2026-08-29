@@ -11,6 +11,17 @@ description: 'Pocket Gems is a San Francisco mobile games and interactive entert
   libraries published to npm under the @pocketgems scope (the internal "Todea" service
   stack), plus an Episode Writer''s Portal used by story authors.'
 url: https://raw.githubusercontent.com/api-evangelist/pocket-gems/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.pocketgems.com/wp-content/themes/pocketgems/assets/images/pocket-gems-logo@2x.png
 x-type: company
 x-source: harvest:secondary-market
