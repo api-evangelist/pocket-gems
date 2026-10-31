@@ -64,5 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Pocket Gems is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/pocket-gems_stock/
+Pocket Gems is a San Francisco mobile games and interactive entertainment studio founded in 2009, employing over 200 people and backed by Sequoia Capital and Tencent. It builds and operates the Episode interactive-storytelling network, Episode XOXO, and the 3D real-time strategy title War Dragons on its proprietary mobile-first Mantis Engine, with products downloaded more than 325 million times. Pocket Gems ships consumer mobile applications rather than a developer-facing API program: there is no public developer portal, API reference, or machine-readable specification. Its public developer surface is a GitHub organization and four first-party Apache-2.0 Node.js libraries published to npm under the @pocketgems scope (the internal "Todea" service stack), plus an Episode Writer's Portal used by story authors.
+
+**Areas:** Company · Gaming · Mobile Games · Interactive Fiction · Entertainment · Mobile App · Game Development · Consumer Software
+
+## Pocket Gems on APIs.io
+
+Everything profiled for Pocket Gems is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pocket-gems/](https://apis.io/providers/pocket-gems/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pocket Gems Domain Security](https://apis.io/security/pocket-gems/pocket-gems-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.pocketgems.com/)
+- [Support](https://pocketgems-support.helpshift.com/hc/en/)
+- [Terms of service](https://www.pocketgems.com/terms-of-service/)
+- [Privacy policy](https://www.pocketgems.com/privacy-policy/)
+- [GitHub](https://github.com/pocketgems)
+
+## API Evangelist rating
+
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pocket-gems/](https://apis.io/providers/pocket-gems/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pocket Gems: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pocket-gems/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
